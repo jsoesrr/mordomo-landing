@@ -4,6 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        lenno: {
+          trust: "#1E3A8A",       // Azul escuro — confiança
+          innovation: "#7C3AED",  // Roxo — inovação
+          creativity: "#F97316",  // Laranja — criatividade
+          balance: "#6B7280",     // Cinza — equilíbrio
+        },
         background: "#232946",
         dark: "#16161a",
         gray: "#242629",
@@ -21,6 +27,3 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 };
-
-// This Tailwind CSS configuration file sets up custom colors and fonts for the Mordomo landing page.
-

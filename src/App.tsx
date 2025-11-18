@@ -9,9 +9,9 @@ import Guide from "./components/Guide";
 
 function App() {
   return (
-    <div className="font-inter bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-[#1E3A8A] via-[#7C3AED] to-[#F97316] text-white">
       <Header />
-      <main>
+      <main className="space-y-24 px-6 pt-24">
         <Hero />
         <About />
         <Guide />
