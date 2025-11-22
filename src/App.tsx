@@ -1,25 +1,18 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Terms from "./components/Terms";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import Guide from "./components/Guide";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import GuiaPage from "./pages/GuiaPage";
+import TermosDeUso from "./pages/TermosDeUso";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1E3A8A] via-[#7C3AED] to-[#F97316] text-white">
-      <Header />
-      <main className="space-y-24 px-6 pt-24">
-        <Hero />
-        <About />
-        <Guide />
-        <Terms />
-        <ScrollToTop />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/guia" element={<GuiaPage />} />
+        <Route path="/termos-de-uso" element={<TermosDeUso />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

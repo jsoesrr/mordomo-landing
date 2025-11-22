@@ -1,3 +1,3 @@
-#Lenno Landing Page
+#LLENO Landing Page
 
-Landing page destinada a apresentação do produto Lenno, desenvolvido com TypeScript.
+Landing page destinada a apresentação do produto LLENO, desenvolvido com TypeScript.

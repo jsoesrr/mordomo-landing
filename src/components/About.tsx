@@ -14,7 +14,7 @@ const About = () => {
           <div>
             <h3 className="text-3xl font-semibold mb-4">Organização sem esforço</h3>
             <p className="text-gray-300 text-lg">
-              O Lenno agenda seus eventos com apenas um comando de voz! Experimente a praticidade de gerenciar sua agenda sem complicações.
+              O LLENO agenda seus eventos com apenas um comando de voz! Experimente a praticidade de gerenciar sua agenda sem complicações.
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ const About = () => {
           <div>
             <h3 className="text-3xl font-semibold mb-4">Convites automatizados</h3>
             <p className="text-gray-300 text-lg">
-              Envie convites, receba confirmações e acompanhe a lista de convidados em tempo real. O Lenno cuida disso pra você.
+              Envie convites, receba confirmações e acompanhe a lista de convidados em tempo real. O LLENO cuida disso pra você.
             </p>
           </div>
           <img
@@ -46,7 +46,7 @@ const About = () => {
           <div>
             <h3 className="text-3xl font-semibold mb-4">Eventos sincronizados</h3>
             <p className="text-gray-300 text-lg">
-              O Lenno se conecta ao Google Calendar para manter seus eventos organizados e atualizados. Você nunca mais vai esquecer uma data importante.
+              O LLENO se conecta ao Google Calendar para manter seus eventos organizados e atualizados. Você nunca mais vai esquecer uma data importante.
             </p>
           </div>
         </div>
