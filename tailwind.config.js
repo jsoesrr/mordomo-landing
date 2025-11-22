@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lenno: {
+        LLENO: {
           trust: "#1E3A8A",       // Azul escuro — confiança
           innovation: "#7C3AED",  // Roxo — inovação
           creativity: "#F97316",  // Laranja — criatividade

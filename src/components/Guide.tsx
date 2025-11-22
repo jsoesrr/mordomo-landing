@@ -1,65 +1,39 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function Guide() {
+const Guide = () => {
+  const navigate = useNavigate();
+
   return (
-    <section id="guide" className="text-white px-6 py-20 font-sans">
-      {/* Título */}
-      <h2 className="text-4xl font-bold text-center mb-4 tracking-tight">📘 Guia de Uso</h2>
-      <div className="w-16 h-1 bg-accent mx-auto mb-12 rounded-full" />
+    <section id="guide" className=" py-20 px-6 text-white">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12">
+        {/* Texto com animação */}
+        <div className="animate-fade-up">
+          <h2 className="text-4xl font-bold mb-4">Guia do Usuário</h2>
+          <p className="text-white/80 text-lg mb-6">
+            Pronto para começar? Descubra todos os recursos e aprenda a integrar o LLeno à sua rotina com facilidade.
+          </p>
+          <button
+            onClick={() => navigate("/guia")}
+            className="px-6 py-3 rounded-full font-semibold shadow-lg 
+                       bg-white/10 backdrop-blur-md border border-white/20 
+                       hover:bg-white/20 hover:scale-105 transition-all duration-300"
+          >
+            📖 Ver Guia Detalhado
+          </button>
+        </div>
 
-      
-
-      {/* QR Code */}
-      <div className="flex justify-center mb-20">
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl shadow-xl flex flex-col items-center transition-transform hover:scale-105 duration-300">
+        {/* Imagem maior com animação e hover */}
+        <div className="flex justify-center animate-fade-up animate-delay-200">
           <img
-            src="/images/novo-qr-code2.png"
-            alt="QR Code do Lenno"
-            className="w-64 h-64 object-contain mb-4"
+            src="/images/qrcode.png"
+            alt="QR code LLeno"
+            className="w-96 h-auto drop-shadow-xl transform transition-transform duration-300 hover:scale-105 hover:brightness-110"
           />
-          <p className="text-light text-center text-sm">
-            Escaneie para começar a usar o Lenno
-          </p>
-        </div>
-      </div>
-
-      {/* Cards */}
-      <div className="grid md:grid-cols-3 gap-8">
-        {/* Começando */}
-        <div id="start" className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl shadow-lg hover:translate-y-1 transition-all duration-300">
-          <div className="flex items-center mb-3">
-            <span className="text-2xl mr-2">🚀</span>
-            <h3 className="text-xl font-semibold">Começando</h3>
-          </div>
-          <p className="text-sm text-light/80">
-            Escaneie o QR Code e comece a conversar com o Lenno via WhatsApp. Ele está pronto pra te ajudar!
-          </p>
-        </div>
-
-        {/* Funcionalidades */}
-        <div id="features" className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl shadow-lg hover:translate-y-1 transition-all duration-300">
-          <div className="flex items-center mb-3">
-            <span className="text-2xl mr-2">✨</span>
-            <h3 className="text-xl font-semibold">Funcionalidades</h3>
-          </div>
-          <ul className="list-disc list-inside text-sm space-y-1 text-light/80">
-            <li>Agendamento via Google Calendar</li>
-            <li>Convites automatizados</li>
-            <li>Eventos próximos na sua região</li>
-          </ul>
-        </div>
-
-        {/* Suporte */}
-        <div id="support" className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl shadow-lg hover:translate-y-1 transition-all duration-300">
-          <div className="flex items-center mb-3">
-            <span className="text-2xl mr-2">🛠️</span>
-            <h3 className="text-xl font-semibold">Suporte</h3>
-          </div>
-          <p className="text-sm text-light/80">
-            Dúvidas? Fale com a gente em <span className="underline">support@lenno.com</span>.
-          </p>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Guide;
