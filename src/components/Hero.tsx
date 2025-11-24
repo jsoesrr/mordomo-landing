@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center animate-fade-in">
         <div className="inline-block shadow-x1 rounded">
           <img
-            src="/images/llenologo.png"
+            src="/images/llenologoblack.png"
             alt="Logo do LLENO"
             className="h-20 drop-shadow-xl mb-6"
           />
