@@ -4,6 +4,9 @@ import LandingPage from "./pages/LandingPage";
 import GuiaPage from "./pages/GuiaPage";
 import TermosDeUso from "./pages/TermosDeUso";
 import PoliticaDePrivacidade from "./pages/PoliticaDePrivacidade";
+import WhatsAppButton from "./components/WhatsAppButton";
+import Contato from "./pages/Contato";
+
 
 function App() {
   return (
@@ -13,7 +16,13 @@ function App() {
         <Route path="/guia" element={<GuiaPage />} />
         <Route path="/termos-de-uso" element={<TermosDeUso />} />
         <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
+        <Route path="/contato" element={<Contato />} />
+
+
+        
       </Routes>
+      <WhatsAppButton />
+
     </BrowserRouter>
   );
 }
