@@ -26,7 +26,7 @@ const Guide = () => {
         {/* Imagem maior com animação e hover */}
         <div className="flex justify-center animate-fade-up animate-delay-200">
           <img
-            src="/images/qrcode.png"
+            src="/images/llenolendo.png"
             alt="QR code LLeno"
             className="w-96 h-auto drop-shadow-xl transform transition-transform duration-300 hover:scale-105 hover:brightness-110"
           />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Contato = () => {
   const [formData, setFormData] = useState({
@@ -22,8 +23,19 @@ const Contato = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Mensagem enviada. Em breve enviaremos um email respondendo o seu contato!");
-    setFormData({ nome: "", whatsapp: "", assunto: "Problema", mensagem: "" });
+    axios.post("https://affirmable-pasty-innocuous.ngrok-free.dev/contact", formData, {
+      headers: {
+        Accept: "application/json",
+      },
+    })
+    .then(() => {
+      alert("Mensagem enviada. Em breve enviaremos um email respondendo o seu contato!");
+      setFormData({ nome: "", whatsapp: "", assunto: "Problema", mensagem: "" });
+    })
+    .catch((err) => {
+      alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
+      console.log(err)
+    });
   };
 
   return (

@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Coluna 1: Logo + frase + redes sociais */}
         <div className="flex flex-col items-center md:items-start gap-4">
           <img
-            src="/images/llenologoblack.png"
+            src="/images/logolleno.png"
             alt="LLeno Logo"
             className="h-12"
           />
