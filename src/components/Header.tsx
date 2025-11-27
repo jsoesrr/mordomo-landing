@@ -29,6 +29,7 @@ const Header = () => {
             alt="Logo do LLeno"
             className="h-12 drop-shadow-xl"
           />
+          
         </div>
 
         {/* Navegação desktop */}
