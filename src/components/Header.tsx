@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom"; // importa o Link do react-router-dom
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Início", to: "home" },
-    { label: "Quem Somos", to: "quem-somos" },
-    { label: "Guia do Usuário", to: "guide" },
-    { label: "Termos de Uso", to: "terms" },
+    { label: "Início", to: "home", type: "scroll" },
+    { label: "Quem Somos", to: "quem-somos", type: "scroll" },
+    { label: "Guia do Usuário", to: "guide", type: "scroll" },
+    { label: "Termos de Uso", to: "terms", type: "scroll" },
+    { label: "Contato", to: "/contato", type: "route" }, // novo item
   ];
 
   const headerHeight = 64;
@@ -31,17 +33,27 @@ const Header = () => {
 
         {/* Navegação desktop */}
         <nav className="hidden md:flex gap-6 text-white/80 font-medium">
-          {navItems.map(({ label, to }) => (
-            <Link
-              key={to}
-              to={to}
-              smooth
-              duration={500}
-              className="cursor-pointer hover:text-purple-300 transition"
-            >
-              {label}
-            </Link>
-          ))}
+          {navItems.map(({ label, to, type }) =>
+            type === "scroll" ? (
+              <Link
+                key={to}
+                to={to}
+                smooth
+                duration={500}
+                className="cursor-pointer hover:text-purple-300 transition"
+              >
+                {label}
+              </Link>
+            ) : (
+              <RouterLink
+                key={to}
+                to={to}
+                className="cursor-pointer hover:text-purple-300 transition"
+              >
+                {label}
+              </RouterLink>
+            )
+          )}
         </nav>
 
         {/* Botão hambúrguer (mobile) */}
@@ -77,18 +89,29 @@ const Header = () => {
         </button>
 
         <div className="flex flex-col items-center justify-start pt-12 pb-8 space-y-6 text-white text-lg font-semibold px-6">
-          {navItems.map(({ label, to }) => (
-            <Link
-              key={to}
-              to={to}
-              smooth
-              duration={500}
-              className="w-full text-center py-3 rounded-md hover:bg-white/10 transition"
-              onClick={() => setMenuOpen(false)}
-            >
-              {label}
-            </Link>
-          ))}
+          {navItems.map(({ label, to, type }) =>
+            type === "scroll" ? (
+              <Link
+                key={to}
+                to={to}
+                smooth
+                duration={500}
+                className="w-full text-center py-3 rounded-md hover:bg-white/10 transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </Link>
+            ) : (
+              <RouterLink
+                key={to}
+                to={to}
+                className="w-full text-center py-3 rounded-md hover:bg-white/10 transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </RouterLink>
+            )
+          )}
         </div>
       </div>
     </header>

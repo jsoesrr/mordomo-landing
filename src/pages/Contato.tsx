@@ -94,7 +94,8 @@ const Contato = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 appearance-none"
+
           >
             <option value="Problema">Problema</option>
             <option value="Sugestao">Sugestão</option>

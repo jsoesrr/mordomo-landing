@@ -14,3 +14,8 @@
 .animate-pulse-slow {
   animation: pulse-slow 3s infinite;
 }
+
+select option {
+  background-color: #1e1b4b;
+  color: white;
+}
