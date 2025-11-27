@@ -4,11 +4,11 @@ import axios from "axios";
 
 const Contato = () => {
   const [formData, setFormData] = useState({
-    nome: "",
+    name: "",
     email: "",
-    whatsapp: "",
-    assunto: "Problema",
-    mensagem: "",
+    phone_number: "",
+    subject: "Problema",
+    message: "",
   });
 
   const navigate = useNavigate();
@@ -30,11 +30,11 @@ const Contato = () => {
       },
     })
     .then(() => {
-      alert("Mensagem enviada. Em breve enviaremos um email respondendo o seu contato!");
-      setFormData({ nome: "", email: "", whatsapp: "", assunto: "Problema", mensagem: "" });
+      alert("message enviada. Em breve enviaremos um email respondendo o seu contato!");
+      setFormData({ name: "", email: "", phone_number: "", subject: "Problema", message: "" });
     })
     .catch((err) => {
-      alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
+      alert("Ocorreu um erro ao enviar a message. Por favor, tente novamente.");
       console.log(err)
     });
   };
@@ -64,7 +64,7 @@ const Contato = () => {
             type="text"
             name="nome"
             placeholder="Nome completo"
-            value={formData.nome}
+            value={formData.name}
             onChange={handleChange}
             required
             className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -84,15 +84,15 @@ const Contato = () => {
             type="text"
             name="whatsapp"
             placeholder="Número do WhatsApp"
-            value={formData.whatsapp}
+            value={formData.phone_number}
             onChange={handleChange}
             required
             className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-green-500"
           />
 
           <select
-            name="assunto"
-            value={formData.assunto}
+            name="subject"
+            value={formData.subject}
             onChange={handleChange}
             className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
           >
@@ -102,9 +102,9 @@ const Contato = () => {
           </select>
 
           <textarea
-            name="mensagem"
-            placeholder="Escreva sua mensagem..."
-            value={formData.mensagem}
+            name="message"
+            placeholder="Escreva sua messagem..."
+            value={formData.message}
             onChange={handleChange}
             required
             rows={5}
