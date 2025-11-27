@@ -19,3 +19,8 @@ select option {
   background-color: #1e1b4b;
   color: white;
 }
+
+p {
+  text-align: justify;
+  hyphens: auto;
+}

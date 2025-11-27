@@ -73,7 +73,7 @@ const QuemSomos = () => {
                 No meio disso, os professores da FPFtech Educacional nos conectaram à WIT Incubadora, um dos braços do que viria a ser um importante parque tecnológico no Brasil. Fomos pré-incubados e nos formalizamos como uma startup.
               </p>
               <p>
-                Enquanto José decidiu participar mais pontualmente da iniciativa, Dário e Thiago receberam com empolgação os novos membros que entraram de cabeça na equipe:
+                Enquanto José decidiu participar mais pontualmente da iniciativa, <strong>Dário</strong> e <strong>Thiago</strong> receberam com empolgação os novos membros que entraram de cabeça na equipe:
               </p>
               <p>
                 <strong>Cezar</strong> e <strong>Matheus</strong> como engenheiros de software e sócios; <strong>Lóren</strong> e <strong>Sofia</strong> como gerentes de marketing e jurídica, respectivamente — somando-se perfeitamente à equipe, trazendo muito talento, experiência, qualidade técnica e visão de negócio.
