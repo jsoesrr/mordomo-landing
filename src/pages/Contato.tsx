@@ -5,6 +5,7 @@ import axios from "axios";
 const Contato = () => {
   const [formData, setFormData] = useState({
     nome: "",
+    email: "",
     whatsapp: "",
     assunto: "Problema",
     mensagem: "",
@@ -30,7 +31,7 @@ const Contato = () => {
     })
     .then(() => {
       alert("Mensagem enviada. Em breve enviaremos um email respondendo o seu contato!");
-      setFormData({ nome: "", whatsapp: "", assunto: "Problema", mensagem: "" });
+      setFormData({ nome: "", email: "", whatsapp: "", assunto: "Problema", mensagem: "" });
     })
     .catch((err) => {
       alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
@@ -45,7 +46,7 @@ const Contato = () => {
         {/* Logo */}
         <div className="flex justify-center mb-6">
           <img
-            src="/images/llenologoblack.png"
+            src="/images/logolleno.png"
             alt="LLeno Logo"
             className="h-12"
           />
@@ -64,6 +65,16 @@ const Contato = () => {
             name="nome"
             placeholder="Nome completo"
             value={formData.nome}
+            onChange={handleChange}
+            required
+            className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+           <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
             onChange={handleChange}
             required
             className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500"
