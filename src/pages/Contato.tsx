@@ -62,7 +62,7 @@ const Contato = () => {
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           <input
             type="text"
-            name="nome"
+            name="name"
             placeholder="Nome completo"
             value={formData.name}
             onChange={handleChange}
@@ -82,7 +82,7 @@ const Contato = () => {
 
           <input
             type="text"
-            name="whatsapp"
+            name="phone_number"
             placeholder="Número do WhatsApp"
             value={formData.phone_number}
             onChange={handleChange}
