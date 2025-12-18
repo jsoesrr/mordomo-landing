@@ -22,7 +22,7 @@ const QuemSomos = () => {
                   Começamos o nosso projeto no curso de Desenvolvimento de Software da FPFtech Educacional — lá tivemos que desenvolver um software com uma ideia inovadora a cada 6 meses.
                 </p>
                 <p>
-                  Ao findar o segundo semestre, Dário, José e Thiago exporam na mostraTech o <strong>IntegrAI</strong>, um agente de WhatsApp que agendava eventos no Google Calendar e convidava outras pessoas.
+                  Ao findar o segundo semestre, Dário, José e Thiago expuseram na mostraTech o <strong>IntegrAI</strong>, um agente de WhatsApp que agendava eventos no Google Calendar e convidava outras pessoas.
                 </p>
               </div>
             </div>
