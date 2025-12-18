@@ -43,14 +43,17 @@ const Footer = () => {
         </div>
 
         {/* Coluna 3: Localização */}
-        <div className="flex flex-col items-center md:items-start text-sm text-white/70">
-          <p>Manaus, AM – Brasil</p>
+        <div className="flex flex-col items-center md:items-center text-sm text-white/70">
+          <p>Contato: suporte@lleno.com.br</p>
+          <p>Telefone: +55 (92) 98114-7651</p>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-white/50">
-        © 2025 LLeno. Todos os direitos reservados.
+        © 2025 58.440.96 CARLOS CEZAR DA COSTA NEGREIROS CNPJ: 58.440.961/0001-05 | Rua Osvaldo Evangelista, 03, Quadra Q - Alvorada | Manaus, AM
+        <br />
+        Todos os direitos reservados.
       </div>
     </footer>
   );
