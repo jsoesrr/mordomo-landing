@@ -9,8 +9,8 @@ const Terms = () => {
       className="min-h-screen text-white px-6 py-20 flex flex-col items-center space-y-12"
       id="terms"
     >
-      {/* Título principal */}
-      <h1 className="text-4xl font-bold text-center">📜 Documentos Importantes</h1>
+      {/* Título principal
+      <h1 className="text-4xl font-bold text-center">📜 Documentos Importantes</h1> */}
 
       {/* Grid com dois cards */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">

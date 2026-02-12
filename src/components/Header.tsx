@@ -6,10 +6,10 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Início", to: "home", type: "scroll" },
-    { label: "Quem Somos", to: "quem-somos", type: "scroll" },
-    { label: "Guia do Usuário", to: "guide", type: "scroll" },
-    { label: "Termos de Uso", to: "terms", type: "scroll" },
+    { label: "Início", to: "/", type: "route" },
+    { label: "Sobre", to: "/sobre", type: "route" },
+    { label: "Guia", to: "/guia", type: "route" },
+    { label: "Termos de uso", to: "/termos-de-uso", type: "route" },
     { label: "Contato", to: "/contato", type: "route" }, // novo item
   ];
 

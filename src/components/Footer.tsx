@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white/5 backdrop-blur-md border-t border-white/10 text-white py-12 mt-12">
+    <footer className="bg-white/5 backdrop-blur-md border-t border-white/10 text-white py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         
         {/* Coluna 1: Logo + frase + redes sociais */}
